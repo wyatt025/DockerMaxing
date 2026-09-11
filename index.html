@@ -5,10 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docker Time!!!</title>
 </head>
-<body>
-    <h1>Welcome!</h1>
-    <p style="color: lightgray;">(It worked! Yay!)</p>
-    <p>This is a simple HTML page served by nginx in a Docker container.</p>
+<body style="margin: 0; padding: 20px; background-color: rgb(29, 29, 29); color:rgb(210, 210, 210);">
+    <h1>Hello!</h1>
+    <p>Answers and documentation for week 3's assignment.</p>
+    <h2><u>Answer 1:</u></h2>
+        <p style="margin-left: 1%; text-indent: 2%;">
+            Most companies use cloud-based email and calendar services due to their scalability, accessibility, and cost-effectiveness. 
+            Cloud-based services allow employees to access their email and calendar from anywhere with an internet connection, facilitating remote work and collaboration. 
+            Additionally, these services often come with built-in security features, automatic updates, and maintenance handled by the provider, reducing the burden on internal IT teams. 
+            This enables companies to focus on their core business activities while ensuring reliable communication and scheduling tools for their workforce.
+        </p>
+    <h2><u>Answer 2:</u></h2>
+        <p style="margin: 1%; text-indent: 2%;">
+            A mid-size company WOULD utilize Glacier for high-volume data that they must keep for compliance or archival purposes but rarely expect to look at again.
+            Examples of this type of data include old financial records, archived emails, historical business documents, or even recovery backups.
+            A company WOULD NOT store any data that is dynamic, frequently accessed, or critical for immediate business operations.
+            That data might be customer information, active sales records, active project files like word documents, or primary backups.
+            Why or why not a company would use Glacier is mostly based on the cost and access time trade-offs. 
+            Glacier is very cost-effective for long-term storage, but it has longer retrieval times compared to other storage options, making it unsuitable for data that needs to be accessed quickly or frequently. 
+            In addition, pulling data from Glacier can incur higher fees.
+            Other alternatives for mass cloud storage & mass backup might include Google Cloud Archive Storage, Azure Archive Storage, or Wasabi Hot Cloud Storage.
+        </p>
+    <h2><u>Answer 3:</u></h2>
+        <p style="margin-left: 1%;">
+            <u>Deep Root Analytics / Republican National Committee Voter Leak:</u>
+            <br>
+            A political data analytics firm representing the Republican National Committee inadvertently exposed the personal data of 198 million United States voters (roughly 61% of the U.S. population at the time). 
+            The exposed 1.1 Terabyte repository contained voter names, dates of birth, home addresses, phone numbers, and predictive profiles calculating voter stances on controversial political topics.
+            <br>
+            <u>What Went Wrong:</u>
+            <br>
+            The company configured an Amazon S3 bucket for unauthenticated public access, allowing anyone with the link to access the data without any authentication or authorization.
+        </p>
+        <p style="margin-left: 1%;">
+            <u>Accenture Corporate Data Leak:</u>
+            <br>
+            Global IT consulting giant Accenture left four massive Amazon S3 buckets publicly accessible to the open internet. 
+            The buckets contained critical internal infrastructure files, including plaintext API credentials, master encryption keys, digital certificates, and customer account data belonging to major corporate entities
+            <br>
+            <u>What Went Wrong:</u>
+            <br>
+            Developers migrated internal development resources over to production environments without conducting an access control review. 
+            The default access policies on the production buckets were left set to allow anyone to read their entire contents without verifying an identity
+        </p>
+    <h2><u>Answer 4:</u></h2>
+        <p style="margin-left: 1%; text-indent: 2%;">
+            You might maintain your own web server for any number of resons.
+            You may be a hobbyist and want to experiment or play around and see how it works.
+            You could also be a professional wanting to learn more about how it all works and develop your skills professionally.
+            However, you may want to use SaaS/PaaS/IaaS if you require access to more powerful hardware, need to scale servers quickly, or you are running a business and don't want to deal with the overhead of maintaining your own server.
+        </p>
+    <h2><u>Documentation:</u></h2>
+    <h4>Github Repo: <a href="https://github.com/wyatt025/DockerMaxing" target="_blank" style="color:rgb(110, 153, 252)">Link</a></h4>
+       <p>Note: I used steps 2-4 to create the documentation after making sure I had the Rocky image linked properly.</p> 
+    <div style="display: flex; flex-wrap:wrap;">
+            <div>
+                <p></p>
+                <figure>
+                    <img src="https://a3s.fi/swift/v1/screenShots/step1.png" 
+                    alt="Step 1" style="width: 25rem; height: 10rem;">
+                    <figcaption>Step 1: Added Allas service to the CSC project</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="https://a3s.fi/swift/v1/screenShots/step3.png" 
+                    alt="Step 2" style="width: 25rem; height: 10rem;">
+                    <figcaption>Step 2: Created a new bucket for the Rocky image below, and a bucket for the screenshots</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="https://a3s.fi/swift/v1/screenShots/step2.png" 
+                    alt="Step 3" style="width: 25rem; height: 10rem;">
+                    <figcaption>Step 3: Uploaded the Rocky image to the bucket</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="https://a3s.fi/swift/v1/screenShots/step4.png" 
+                    alt="Step 4" style="width: 25rem; height: 10rem;">
+                    <figcaption>Step 4: Updated the index.html file to display the Rocky image using the Allas URL</figcaption>
+                </figure>
+            </div>
+        </div>
     <figure>
         <img src="https://a3s.fi/swift/v1/OtherIMGs/screenshot.png"
             alt="Rocky from Project Hail Mary" style="width: 50%; height: auto;">
